@@ -18,5 +18,6 @@ jobs:
     - name: print info
       run: |
         echo ${{ github.ref }}
+        echo ${{ GITHUB_WORKFLOW }}
 
 
