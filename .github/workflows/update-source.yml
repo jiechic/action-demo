@@ -3,7 +3,7 @@ name: Update Upstream Source
 on:
   push:
     branches: 
-      - '*'
+      - dev
 
 jobs:
   build:
