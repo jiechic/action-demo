@@ -1,8 +1,9 @@
 name: Update Upstream Source
 
 on:
-  schedule:
-    - cron: * * * * *
+  push:
+    branches: 
+      - *
 
 jobs:
   build:
