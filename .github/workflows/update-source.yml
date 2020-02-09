@@ -1,10 +1,11 @@
 name: Update Upstream Source
 
 on:
-  push:                                                                             branches:                                                                         - master
+  schedule:
+    - cron: * * * * *
+
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
