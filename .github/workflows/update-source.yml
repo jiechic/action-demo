@@ -1,8 +1,9 @@
 name: Update Upstream Source
 
 on:
-  schedule:
-    - cron: 58 * * * *
+  push:
+    branches: 
+      - '*'
   
 
 jobs:
