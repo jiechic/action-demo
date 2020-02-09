@@ -1,10 +1,7 @@
 name: Update Upstream Source
 
 on:
-  schedule:
-    - cron: 57 * * * *
-  
-
+  push:                                                                             branches:                                                                         - master
 jobs:
   build:
 
