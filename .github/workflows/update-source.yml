@@ -19,5 +19,14 @@ jobs:
       run: |
         echo ${{ github.ref }}
         echo ${{ github.workflow }}
+        echo ${{ github.run_id }}
+        echo ${{ github.action }}
+        echo ${{ github.actions }}
+        echo ${{ github.actor }}
+        echo ${{ github.repository }}
+        echo ${{ github.event_name }}
+        echo ${{ github.event_path }}
+        
+      
 
 
