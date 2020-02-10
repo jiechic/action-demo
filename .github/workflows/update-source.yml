@@ -17,14 +17,14 @@ jobs:
         ref: ${{ github.ref }} 
     
     - name: set upstream source
-      if: contains( ${{ github.ref }}, 'lean' )
+      if: contains( github.ref, 'lean' )
       env:
         UPSTREAM_URL: 'https://github.com/coolsnowwolf/lede.git' 
       run: |
         git remote add $UPSTREAM_NAME $UPSTREAM_URL
         
     - name: set lean upstream source
-      if: contains( ${{ github.ref }}, 'lienol' )
+      if: contains( github.ref , 'lienol' )
       env:
         UPSTREAM_URL: 'https://github.com/Lienol/lean-lede.git' 
       run: |
